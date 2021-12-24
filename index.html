@@ -9,21 +9,22 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id='content'>
-        <div class='top'>
-            <div class='name'>Name</div>
-            <div class='temp'>55&#176;</div>
+    <div id='card'>
+        <div id='content'>
+            <div class='info'>
+                <div class='name'>Name</div>
+                <div class='main'>Clouds</div>
+                <div class='description'>overcast</div>
+                <div class='humidity'>Humidity: 55%</div>
+                <div class='speed'>Wind: 12mph</div>
+            </div>
+            <div class='temp'>55.55°F</div>
         </div>
-        <div class='main'>Clouds</div>
-        <div class='description'>Overcast</div>
-        <div class='humidity'>55%</div>
-        <div class='speed'>12mph</div>
+        <form id='form'>
+            <label for='city'>City / Location: </label>
+            <input type='text' name='location' id='location'>
+            <button type='submit' value='search' id='search'>Search</button>
+        </form>
     </div>
-    <form id='form'>
-        <label for='city'>City/Location</label>
-        <input type='text' name='location' id='location'>
-        <button type='submit' value='search' id='search'>Search</button>
-    </form>
-    
 </body>
 </html>
