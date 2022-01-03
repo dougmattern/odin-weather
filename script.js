@@ -58,6 +58,7 @@ async function getWeather(location) {
     document.querySelector(".main").innerText = ".";
     document.querySelector(".description").innerText = ".";
     document.querySelector(".speed").innerText = ".";
+    spinnerOut();
   }
 }
 
