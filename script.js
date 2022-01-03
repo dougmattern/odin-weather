@@ -36,7 +36,7 @@ async function getWeather(location) {
       let stateCode = location.split(",")[1].trim();
       let searchCity = location.substring(0, location.indexOf(","));
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${searchCity},${stateCode},US&units=imperial&appid=${apiKey}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${searchCity},${stateCode},US&units=imperial&appid=${apiKey}`,
         { mode: "cors" }
       );
       const data = await response.json();
@@ -44,7 +44,7 @@ async function getWeather(location) {
       spinnerOut();
     } else {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${apiKey}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${apiKey}`,
         { mode: "cors" }
       );
       const data = await response.json();
